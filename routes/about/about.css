@@ -1,0 +1,98 @@
+html {
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    margin: 0;
+    letter-spacing: 0.1em;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p:not(nav p) {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* MAIN */
+main {
+    background-image: url('./../../assets/about-bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.48);
+    border-radius: 0 15px 15px 0;
+    max-width: 40vw;
+    background-color: #ffffff;
+    /* margin-top: 6rem; */
+}
+
+section p {
+    padding: 2rem;
+    line-height: 1.5em;
+}
+
+section h2 {
+    margin: 0;
+}
+
+div[clip] {
+    width: 2rem;
+    height: .5rem;
+    background-color: #000000;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        background-image: url('./../../assets/about-bg-mobile.png');
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 401px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        background-image: url('./../../assets/about-bg-tablet.png');
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    .section-header {
+        padding-top: 6rem;
+    }
+
+    section {
+        width: 100vw;
+        max-width: none;
+        border-radius: 0 0 15px 15px;
+    }
+}

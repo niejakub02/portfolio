@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 25vw;
+    height: 100vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 1);
+}
+
+button[aria-label="home site"] {
+    left: .5rem;
+}
+
+button[aria-label="open menu"] {
+    right: .5rem;
+}
+
+header {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+div[img] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+section:nth-child(1) div[img] {
+    background-image: url('./assets/hiking.jpg');
+}
+
+section:nth-child(2) div[img] {
+    background-image: url('./assets/desk.jpg');
+}
+
+section:nth-child(3) div[img] {
+    background-image: url('./assets/library.jpg');
+}
+
+section:nth-child(4) div[img] {
+    background-image: url('./assets/bulb.jpg');
+}
+
+
+div[img] {
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    transition: filter .75s;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: inset 0 0 10000px 0px rgba(0, 0, 0, 0.48);
+}
+
+section a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    z-index: 2;
+    user-select: none;
+    margin: 0;
+    pointer-events: none;
+}
+
+div[img]:hover {
+    filter: blur(3px);
+}
+
+div[clip1] {
+    height: .25rem;
+    width: 3rem;
+    background-color: #ffffff;
+    z-index: 2;
+    margin-bottom: .5rem;
+}
+
+div[clip2] {
+    height: .25rem;
+    width: 1.5rem;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.onHover {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .75s, visibility .75s;
+    visibility: hidden;
+}
+
+div[img]:hover ~ .onHover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.close-button {
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100vw;
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        width: 100vw;
+    }
+}

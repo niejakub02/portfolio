@@ -1,0 +1,47 @@
+/* NAV */
+nav {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    background-color: rgba(81, 69, 66, .8);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    backdrop-filter: blur(2px)
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    text-decoration: none;
+}
+
+nav a p {
+    margin: 0;
+}
+
+nav a:first-child {
+    margin-top: 2rem;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.close-button {
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+div[clip3] {
+    width: 1rem;
+    height: .25rem;
+    background-color: #ffffff;
+}

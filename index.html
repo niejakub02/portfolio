@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <button aria-label="home site" class="logo-button" onclick="document.location.replace('./index.html')">
+            <img src="./assets/logo.svg" alt="logo">
+        </button>
+
+        <button aria-label="open menu" class="menu-button">
+            <img src="./assets/menu.svg" alt="menu">
+        </button>
+    </header>
+
+    <nav class="hide">
+        <button aria-label="close menu" class="close-button">
+            <img src="./assets/menu.svg" alt="close-menu">
+        </button>
+
+        <a href="/index.html" aria-label="home site">
+            <p>home 00</p>
+            <div clip3></div>
+        </a>
+        <a href="./routes/about/about.html" aria-label="about me">
+            <p>about 01</p>
+            <div clip3></div>
+        </a>
+        <a href="./routes/works/works.html" aria-label="my works">
+            <p>works 02</p>
+            <div clip3></div>
+        </a>
+        <a href="./routes/education/education.html" aria-label="my education">
+            <p>education 03</p>
+            <div clip3></div>
+        </a>
+        <a href="./routes/skills/skills.html" aria-label="my skills">
+            <p>skills 04</p>
+            <div clip3></div>
+        </a>
+    </nav>
+
+    <main>
+        <section>
+            <a href="./routes/about/about.html">
+                <div img></div>
+                <div class="onHover">
+                    <h1>about</h1>
+                    <div clip1></div>
+                    <div clip2></div>
+                </div>
+            </a>
+        </section>
+
+        <section>
+            <a href="./routes/works/works.html">
+                <div img></div>
+                <div class="onHover">
+                    <h1>works</h1>
+                    <div clip1></div>
+                    <div clip2></div>
+                </div>
+            </a>
+        </section>
+
+        <section>
+            <a href="./routes/education/education.html">
+                <div img></div>
+                <div class="onHover">
+                    <h1>education</h1>
+                    <div clip1></div>
+                    <div clip2></div>
+                </div>
+            </a>
+        </section>
+
+        <section>
+            <a href="./routes/skills/skills.html">
+                <div img></div>
+                <div class="onHover">
+                    <h1>skills</h1>
+                    <div clip1></div>
+                    <div clip2></div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="./scripts/logo.js"></script>
+    <script src="./scripts/nav.js"></script>
+</body>
+</html>

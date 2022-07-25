@@ -1,0 +1,14 @@
+/* FOOTER */
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    background-color: #514542;
+    color: #ffffff;
+}
+
+footer p {
+    padding: 1rem;
+}
